@@ -1,4 +1,4 @@
-// Task 2
+// Task 2(1)
 
 export default function User(props){
 let{name,id,status,species,gender,photo }=props
