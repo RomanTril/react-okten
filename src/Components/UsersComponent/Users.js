@@ -1,10 +1,9 @@
-// 2.1 Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
-// https://rickandmortyapi.com/
-//     https://rickandmortyapi.com/api/character
+// Task 2.1
 
 import {useEffect, useState} from "react";
+
 import User from "./User";
-import {getUsers} from "../Servicec/Services";
+import {getUsers} from "../../Servicec/services";
 
 export default function Users(){
     let [users,setUsers]=useState([]);

@@ -1,8 +1,5 @@
 // 1. Описати всю сім'ю сімпсонів (5 персонажів)
 
-// import './App.css';
-// import Component from "./Components/SimpsonComponents/Component";
-
 // let simpsons = [
 //   {
 //     name: 'Bart',
@@ -41,83 +38,12 @@
 //   },
 // ];
 
-
-// function App() {
-//   return (
-//     <div className="App">
-//
-//      <Component
-//       itemName={'Bart'}
-//       itemSurname={'Simpson'}
-//       itemAge={10}
-//       itemInfo={'Бартолом ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.'}
-//       itemPhoto={'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'}
-//     />
-//
-//        <Component
-//           itemName={'Homer'}
-//           itemSurname={'Simpson'}
-//           itemAge={40}
-//           itemInfo={'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.'}
-//           itemPhoto={'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}
-//       />
-//
-//        <Component
-//           itemName={'Marge'}
-//           itemSurname={'Simpson'}
-//           itemAge={38}
-//           itemInfo={'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'}
-//           itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}
-//       />
-//
-//        <Component
-//           itemName={'Lisa'}
-//           itemSurname={'Simpson'}
-//           itemAge={9}
-//           itemInfo={'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.'}
-//           itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}
-//       />
-//
-//          <Component
-//             itemName={'Marge'}
-//             itemSurname={'Simpson'}
-//             itemAge={38}
-//             itemInfo={'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'}
-//             itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}
-//         />
-//
-//      </div>
-//   );
-// }
-// export default App;
-
-
 // 2.1 Створити компонент який описує персонажа (властивості id,name,status,species,gender,image) з цього апі
 // https://rickandmortyapi.com/
 //     https://rickandmortyapi.com/api/character
 //         Створити 6 персонажів
 
-import './App.css';
-import Users from "./Components/UsersComponent/Users";
-
-function App() {
-  return (
-    <div className="App">
-      <Users/>
-    </div>
-  );
-}
-
-export default App;
-
-
-
-
 // Task2(2)
-
-// import './App.css';
-// import RickAndMortyComponent from "./Components/UsersComponent/User";
-
 // let rickAndMorty=[
 //     {"id":235,
 //     "name":"Mortytown Loco",
@@ -203,69 +129,119 @@ export default App;
 //         "episode":["https://rickandmortyapi.com/api/episode/46"],
 //         "url":"https://rickandmortyapi.com/api/character/747",
 //         "created":"2021-10-17T13:56:15.096Z"}
-//
-//
-//
 // ]
-// console.log(rickAndMorty)
 
-// function App() {
-//     return (
-//         <div className="App">
-//
-//             <RickAndMortyComponent
-//                 ItemId={235}
-//                 ItemName={'Mortytown Loco'}
-//                 ItemStatus={'Dead'}
-//                 ItemSpecies={'Human'}
-//                 ItemGender={'Male'}
-//                 pic={"https://rickandmortyapi.com/api/character/avatar/235.jpeg"}
-//             />
-//
-//
-//             <RickAndMortyComponent
-//                 ItemId={333}
-//                 ItemName={'Stair Goblin'}
-//                 ItemStatus={'Alive'}
-//                 ItemSpecies={'Mythological Creature'}
-//                 ItemGender={'Genderless'}
-//                 pic={"https://rickandmortyapi.com/api/character/avatar/333.jpeg"}
-//             />
-//
-//             <RickAndMortyComponent
-//                 ItemId={471}
-//                 ItemName={'Little Voltron'}
-//                 ItemStatus={'Alive'}
-//                 ItemSpecies={'Robot'}
-//                 ItemGender={'Genderless'}
-//                 pic={"https://rickandmortyapi.com/api/character/avatar/471.jpeg"}
-//             />
-//             <RickAndMortyComponent
-//                 ItemId={511}
-//                 ItemName={'Anchorwoman'}
-//                 ItemStatus={'Alive'}
-//                 ItemSpecies={'Human'}
-//                 ItemGender={'Female'}
-//                 pic={"https://rickandmortyapi.com/api/character/avatar/511.jpeg"}
-//             />
-//             <RickAndMortyComponent
-//                 ItemId={604}
-//                 ItemName={'Female Scorpion'}
-//                 ItemStatus={'Dead'}
-//                 ItemSpecies={'Animal'}
-//                 ItemGender={'Female'}
-//                  pic={"https://rickandmortyapi.com/api/character/avatar/604.jpeg"}
-//             />
-//             <RickAndMortyComponent
-//                 ItemId={747}
-//                 ItemName={'Cenobite'}
-//                 ItemStatus={'unknown'}
-//                 ItemSpecies={'Mythological Creature'}
-//                 ItemGender={'Male'}
-//                 pic={"https://rickandmortyapi.com/api/character/avatar/747.jpeg"}
-//             />
-//         </div>
-//     );
-// }
 
-// export default App;
+import './App.css';
+
+import Component from "./Components/SimpsonComponents/Component";
+import Users from "./Components/UsersComponent/Users";
+import RickAndMortyComponent from "./Components/RickAndMorty/RickAndMorty";
+
+function App() {
+  return (
+    <div className="App">
+        <Component
+                  itemName={'Bart'}
+                  itemSurname={'Simpson'}
+                  itemAge={10}
+                  itemInfo={'Бартолом ДжоДжо «Барт» Сімпсон (англ. Bartholomew JoJo «Bart» Simpson) — один із головних героїв мультиплікаційного серіалу Сімпсони. Барт — найстарша дитина Гомера і Мардж Сімпсон. У нього також є дві молодші сестри — Ліса і Меґґі. Барт є втіленням образу бешкетника та посереднього учня у школі. Разом зі своїм батьком Барт є одним із найвідоміших персонажів у цьому серіалі.'}
+                  itemPhoto={'https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png'}
+        />
+
+        <Component
+                      itemName={'Homer'}
+                      itemSurname={'Simpson'}
+                      itemAge={40}
+                      itemInfo={'Гомер Джей Сімпсон (англ. Homer Jay Simpson) — один із головних героїв мультсеріалу «Сімпсони». Гомер — грубий і неввічливий батько родини, він має очевидні вади: товстий, лисий і не дуже розумний. Нерідко він поводиться як блазень, абсурдно, егоїстично і нетактовно, але все ж лишається симпатичним.'}
+                      itemPhoto={'http://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png'}
+        />
+
+        <Component
+                      itemName={'Marge'}
+                      itemSurname={'Simpson'}
+                      itemAge={38}
+                      itemInfo={'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'}
+                      itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}
+        />
+
+        <Component
+                      itemName={'Lisa'}
+                      itemSurname={'Simpson'}
+                      itemAge={9}
+                      itemInfo={'Ли́за Мари́ Си́мпсон (англ. Lisa Marie Simpson) — героиня мультипликационного сериала «Симпсоны». Средний ребёнок в семье, восьмилетняя девочка, выделяющаяся среди остальных Симпсонов прежде всего своим умом и рассудительностью.'}
+                      itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png'}
+        />
+
+        <Component
+                        itemName={'Marge'}
+                        itemSurname={'Simpson'}
+                        itemAge={38}
+                        itemInfo={'Ма́рджори Жакли́н «Мардж» Си́мпсон (в девичестве Бувье́) (англ. Marjorie Jacqueline «Marge» Simpson) — постоянный персонаж мультипликационного сериала «Симпсоны», её озвучивает Джулия Кавнер. Обычно носит зелёное платье, красные балетки, на шее — ожерелье из искусственного жемчуга и ездит на оранжевом универсале. У неё шикарные синие волосы, которые она обычно собирает в очень высокую причёску. Глаза цвета ореха (19s6e). Основное занятие — домохозяйка, большую часть времени проводит в заботе о доме, детях и Гомере. Образ Мардж копирует стереотип провинциальной американской домохозяйки 50-х годов. Мардж — единственный член семьи, посещающий церковь добровольно. Старается поддерживать нравственность не только своей семьи, но и всего города. Отлично готовит, особенно славятся её свиные отбивные и зефир. Любимое блюдо — лапша с маслом.'}
+                        itemPhoto={'https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png'}
+        />
+
+        <RickAndMortyComponent
+            RickAndMortyId={235}
+            RickAndMortyName={'Mortytown Loco'}
+            RickAndMortyStatus={'Dead'}
+            RickAndMortySpecies={'Human'}
+            RickAndMortyGender={'Male'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/235.jpeg"}
+        />
+
+
+        <RickAndMortyComponent
+            RickAndMortyId={333}
+            RickAndMortyName={'Stair Goblin'}
+            RickAndMortyStatus={'Alive'}
+            RickAndMortySpecies={'Mythological Creature'}
+            RickAndMortyGender={'Genderless'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/333.jpeg"}
+        />
+
+        <RickAndMortyComponent
+            RickAndMortyId={471}
+            RickAndMortyName={'Little Voltron'}
+            RickAndMortyStatus={'Alive'}
+            RickAndMortySpecies={'Robot'}
+            RickAndMortyGender={'Genderless'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/471.jpeg"}
+        />
+        <RickAndMortyComponent
+            RickAndMortyId={511}
+            RickAndMortyName={'Anchorwoman'}
+            RickAndMortyStatus={'Alive'}
+            RickAndMortySpecies={'Human'}
+            RickAndMortyGender={'Female'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/511.jpeg"}
+        />
+        <RickAndMortyComponent
+            RickAndMortyId={604}
+            RickAndMortyName={'Female Scorpion'}
+            RickAndMortyStatus={'Dead'}
+            RickAndMortySpecies={'Animal'}
+            RickAndMortyGender={'Female'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/604.jpeg"}
+        />
+        <RickAndMortyComponent
+            RickAndMortyId={747}
+            RickAndMortyName={'Cenobite'}
+            RickAndMortyStatus={'unknown'}
+            RickAndMortySpecies={'Mythological Creature'}
+            RickAndMortyGender={'Male'}
+            pic={"https://rickandmortyapi.com/api/character/avatar/747.jpeg"}
+        />
+
+      <Users/>
+    </div>
+  );
+}
+
+export default App;
+
+
+
+
+
+
