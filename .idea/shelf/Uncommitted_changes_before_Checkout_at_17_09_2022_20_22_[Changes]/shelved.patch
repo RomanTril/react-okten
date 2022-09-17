@@ -1,0 +1,89 @@
+Index: .idea/.gitignore
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+deleted file mode 100644
+--- a/.idea/.gitignore	(revision 7214ba2aad248e89ce459a0db8d925bb862350ee)
++++ /dev/null	(revision 7214ba2aad248e89ce459a0db8d925bb862350ee)
+@@ -1,8 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+-# Editor-based HTTP Client requests
+-/httpRequests/
+-# Datasource local storage ignored files
+-/dataSources/
+-/dataSources.local.xml
+Index: package.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"name\": \"react_lessons2\",\r\n  \"version\": \"0.1.0\",\r\n  \"private\": true,\r\n  \"dependencies\": {\r\n    \"@testing-library/jest-dom\": \"^5.16.5\",\r\n    \"@testing-library/react\": \"^13.4.0\",\r\n    \"@testing-library/user-event\": \"^13.5.0\",\r\n    \"react\": \"^18.2.0\",\r\n    \"react-dom\": \"^18.2.0\",\r\n    \"react-scripts\": \"5.0.1\",\r\n    \"web-vitals\": \"^2.1.4\"\r\n  },\r\n  \"scripts\": {\r\n    \"start\": \"react-scripts start\",\r\n    \"build\": \"react-scripts build\",\r\n    \"test\": \"react-scripts test\",\r\n    \"eject\": \"react-scripts eject\"\r\n  },\r\n  \"eslintConfig\": {\r\n    \"extends\": [\r\n      \"react-app\",\r\n      \"react-app/jest\"\r\n    ]\r\n  },\r\n  \"browserslist\": {\r\n    \"production\": [\r\n      \">0.2%\",\r\n      \"not dead\",\r\n      \"not op_mini all\"\r\n    ],\r\n    \"development\": [\r\n      \"last 1 chrome version\",\r\n      \"last 1 firefox version\",\r\n      \"last 1 safari version\"\r\n    ]\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package.json b/package.json
+--- a/package.json	(revision 7214ba2aad248e89ce459a0db8d925bb862350ee)
++++ b/package.json	(date 1663434015902)
+@@ -9,7 +9,9 @@
+     "react": "^18.2.0",
+     "react-dom": "^18.2.0",
+     "react-scripts": "5.0.1",
+-    "web-vitals": "^2.1.4"
++    "web-vitals": "^2.1.4",
++    "axios": "^0.27.2"
++
+   },
+   "scripts": {
+     "start": "react-scripts start",
+Index: src/App.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import logo from './logo.svg';\r\nimport './App.css';\r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <header className=\"App-header\">\r\n        <img src={logo} className=\"App-logo\" alt=\"logo\" />\r\n        <p>\r\n          Edit <code>src/App.js</code> and save to reload.\r\n        </p>\r\n        <a\r\n          className=\"App-link\"\r\n          href=\"https://reactjs.org\"\r\n          target=\"_blank\"\r\n          rel=\"noopener noreferrer\"\r\n        >\r\n          Learn React\r\n        </a>\r\n      </header>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/App.js b/src/App.js
+--- a/src/App.js	(revision 7214ba2aad248e89ce459a0db8d925bb862350ee)
++++ b/src/App.js	(date 1663434016082)
+@@ -1,23 +1,27 @@
+-import logo from './logo.svg';
++// з jsonplaceholder отримати всіх юзерів в компоненту Users.js
++// відобразити кожного інформацію (id,name) з кожного юзера (компонента User)
++// Зробити кнопку вибора юзера, при натисканні на яку в Users.js ви покажете детальну інфомацію про користувача(довільно обрану інформацію)
++
++
++
++// =====
++// є API от SpaceX
++// https://api.spacexdata.com/v3/launches/
++//     потрібно вивести всі запуски кораблів окрім 2020 року
++// репрезентувати тільки окремі поля (зазначені в скрнішоті в папці)
++
+ import './App.css';
+ 
++import Users from "./components/users/users";
++import Launches from "./components/spaceX/launches/launches";
++
+ function App() {
+   return (
+     <div className="App">
+-      <header className="App-header">
+-        <img src={logo} className="App-logo" alt="logo" />
+-        <p>
+-          Edit <code>src/App.js</code> and save to reload.
+-        </p>
+-        <a
+-          className="App-link"
+-          href="https://reactjs.org"
+-          target="_blank"
+-          rel="noopener noreferrer"
+-        >
+-          Learn React
+-        </a>
+-      </header>
++      <Users/>
++      <Launches/>
++
++
+     </div>
+   );
+ }
