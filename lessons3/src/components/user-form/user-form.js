@@ -7,7 +7,7 @@ const UserForm = ({setUsers}) => {
 
 
     const submit= async (user)=>{
-        const {data} = await userServices.create(user)
+        const {data} = await userServices.create(user);
         setUsers(users=>[...users,data])
     };
     return (

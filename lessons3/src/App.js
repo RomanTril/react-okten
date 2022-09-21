@@ -1,4 +1,5 @@
 import {Users} from "./components";
+import Comments from "./components/comments/comments";
 
 
 
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
 
         <Users/>
+        <Comments/>
 
     </div>
   );
