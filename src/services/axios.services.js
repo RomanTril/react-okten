@@ -5,4 +5,4 @@ const axiosServices=axios.create({baseURL});
 
 export {
     axiosServices
-}
+};

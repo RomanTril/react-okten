@@ -5,4 +5,4 @@ const postsServices={
     getAll:()=>axiosServices.get(urls.posts)
 }
 
-export {postsServices}
+export {postsServices};

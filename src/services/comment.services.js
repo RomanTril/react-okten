@@ -5,4 +5,4 @@ const commentsServices={
     getAll:()=>axiosServices.get(urls.comments)
 }
 
-export {commentsServices}
+export {commentsServices};
