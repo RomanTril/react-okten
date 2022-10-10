@@ -1,0 +1,9 @@
+.PostHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: burlywood;
+    height: 100px;
+
+
+}
